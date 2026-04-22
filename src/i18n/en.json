@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "slogan": "The comfort of your home is our job.",
+    "description": "Household services and general renovation works"
+  },
+  "services": {
+    "title": "Services",
+    "items": {
+      "plumbing": {
+        "title": "Plumbing",
+        "description": [
+          "We perform plumbing work of any type and complexity.",
+          "Installation, repair, and replacement of sinks, faucets, pipes, valves, toilets, and showers.",
+          "Pipe installation and dismantling, sewer blockage removal."
+        ],
+        "image": "/services/plumbing.webp"
+      },
+      "electricity": {
+        "title": "Electrical Services",
+        "description": [
+          "We carry out all types of electrical work quickly and with high quality.",
+          "Installation and replacement of chandeliers, sockets, switches, lamps, breakers, fans, and LED lights."
+        ],
+        "image": "/services/plumbing.webp"
+      },
+      "doors_windows": {
+        "title": "Doors and Windows",
+        "description": [
+          "Installation, repair, and adjustment of wooden, metal, and plastic doors and windows.",
+          "Lock replacement, handle installation, glass replacement, mechanism repair, insulation improvement."
+        ],
+        "image": "/services/doors_windows.jpg"
+      },
+      "furniture_cleaning": {
+        "title": "Furniture Cleaning",
+        "description": [
+          "Deep cleaning of upholstered furniture on-site.",
+          "Stain removal, odor elimination, hygienic disinfection using safe materials."
+        ],
+        "image": "/services/furniture-cleaning.jpg"
+      },
+      "furniture_repair": {
+        "title": "Furniture Repair",
+        "description": [
+          "Repair and replacement of furniture mechanisms.",
+          "Adjustment of doors, hinges, guides, and restoration of surfaces."
+        ],
+        "image": "/services/furniture-repair.jpg"
+      },
+      "carpet_cleaning": {
+        "title": "Carpet Cleaning",
+        "description": [
+          "Professional carpet washing and cleaning.",
+          "Removal of stains and odors, color refresh, fiber preservation."
+        ],
+        "image": "/services/carpet_cleaning.jpg"
+      },
+      "boiler_repair": {
+        "title": "Boiler Repair",
+        "description": [
+          "Diagnostics and repair of gas and electric boilers.",
+          "Troubleshooting, cleaning, adjustment, and maintenance."
+        ],
+        "image": "/services/boiler_repair.jpg"
+      },
+      "ac_cleaning": {
+        "title": "Air Conditioner Cleaning",
+        "description": [
+          "Cleaning of internal and external AC units.",
+          "Filter washing, disinfection, gas check, and efficiency optimization."
+        ],
+        "image": "/services/ac_cleaning.jpg"
+      }
+    }
+  },
+
+  "quality_assurance": {
+    "title": "Fast Response",
+    "items": [
+      "High-quality and clean work",
+      "Affordable prices"
+    ],
+    "contact": "Call us and trust your home to professionals."
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "description": "We are here to help you. Reach out anytime and we’ll respond soon.",
+    "image": "/contact.jpg",
+    "items": [
+      {
+        "type": "phone",
+        "label": "Phone",
+        "value": "+374 99 123 456"
+      },
+      {
+        "type": "address",
+        "label": "Address",
+        "value": "Yerevan, Armenia"
+      },
+      {
+        "type": "hours",
+        "label": "Working Hours",
+        "value": [
+          "Mon - Fri: 09:00 - 18:00",
+          "Sat: 10:00 - 14:00",
+          "Sun: Closed"
+        ]
+      }
+    ]
+  }
+}

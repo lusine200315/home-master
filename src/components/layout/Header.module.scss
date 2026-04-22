@@ -1,0 +1,124 @@
+.header {
+  position: fixed;
+  background-color: #e8e8e8;
+  color: #2f2f2f;
+  padding: 1rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Desktop nav */
+.nav {
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+/* RIGHT SIDE */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Desktop language */
+.desktopLang {
+  display: block;
+}
+
+/* Mobile language */
+.mobileLang {
+  display: none;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobileMenu {
+  background: #e8e8e8;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      text-decoration: none;
+      color: #2f2f2f;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* 📌 Contact info block in mobile menu */
+.mobileInfo {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #2f2f2f;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .desktopLang {
+    display: none;
+  }
+
+  .mobileLang {
+    display: block;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .actions {
+    gap: 0.6rem;
+  }
+}

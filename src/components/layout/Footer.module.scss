@@ -1,0 +1,50 @@
+.footer {
+    background-color: #e8e8e8;
+    color: #2f2f2f;
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+  
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .contact-info {
+      flex: 1 1 200px;
+  
+      p {
+        margin: 0.5rem 0;
+      }
+  
+      .working-hours {
+        margin-top: 1rem;
+      }
+    }
+  
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.5rem;
+  
+      a {
+        color: #2f2f2f;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #333333;
+        }
+      }
+    }
+  
+    .copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  }
