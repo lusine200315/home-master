@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -18,6 +18,18 @@ const Header = () => {
     { name: 'About', path: 'about' },
     { name: 'Contact', path: 'contact' },
   ];
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [open]);
 
   return (
     <header className={styles.header}>
@@ -40,9 +52,8 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* RIGHT SIDE */}
+        {/* Right side */}
         <div className={styles.actions}>
-          {/* ✅ ALWAYS visible */}
           <LanguageSwitcher />
 
           <button
@@ -54,27 +65,31 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* FULL SCREEN OVERLAY MENU */}
       {open && (
-        <div className={styles.mobileMenu}>
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link
-                  href={`/${currentLang}/${link.path}`}
-                  onClick={() => setOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className={styles.overlay}>
+          <div className={styles.mobileMenu}>
+            {/* Nav links */}
+            <ul>
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={`/${currentLang}/${link.path}`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-          <div className={styles.mobileInfo}>
-            <p><strong>Email:</strong> info@homemaster.com</p>
-            <p><strong>Address:</strong> Yerevan, Armenia</p>
-            <p><strong>Working Days:</strong> Mon - Sat</p>
-            <p><strong>Hours:</strong> 09:00 - 18:00</p>
+            {/* Contact info */}
+            <div className={styles.mobileInfo}>
+              <p><strong>Email:</strong> info@homemaster.com</p>
+              <p><strong>Address:</strong> Yerevan, Armenia</p>
+              <p><strong>Working Days:</strong> Mon - Sat</p>
+              <p><strong>Hours:</strong> 09:00 - 18:00</p>
+            </div>
           </div>
         </div>
       )}

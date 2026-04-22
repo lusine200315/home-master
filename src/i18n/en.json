@@ -73,6 +73,18 @@
       }
     }
   },
+  
+  "renovation_services": {
+    "title": "Apartment Renovation (Full Service)",
+    "items": [
+      "Tile work and flooring installation",
+      "Painting and wall preparation",
+      "Plasterboard structures and decorative work",
+      "Electrical system installation and configuration",
+      "Plumbing system installation and repair",
+      "Interior design and finishing works"
+    ]
+  },
 
   "quality_assurance": {
     "title": "Fast Response",

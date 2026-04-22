@@ -1,8 +1,13 @@
 .header {
-  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
   background-color: #e8e8e8;
   color: #2f2f2f;
   padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .container {
@@ -33,24 +38,12 @@
   }
 }
 
-/* RIGHT SIDE */
 .actions {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
 
-/* Desktop language */
-.desktopLang {
-  display: block;
-}
-
-/* Mobile language */
-.mobileLang {
-  display: none;
-}
-
-/* Burger */
 .burger {
   display: none;
   background: none;
@@ -59,32 +52,55 @@
   cursor: pointer;
 }
 
-/* Mobile menu */
-.mobileMenu {
+.overlay {
+  position: fixed;
+  top: 69px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 69px);
+
   background: #e8e8e8;
-  padding: 1rem;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+
+  /* animation */
+  transform: translateX(100%);
+  animation: slideIn 0.35s ease forwards;
+}
+
+.mobileMenu {
+  height: 100%;
+  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-y: auto;
 
   ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
     margin: 0;
     padding: 0;
 
     li a {
       text-decoration: none;
       color: #2f2f2f;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
 }
 
-/* 📌 Contact info block in mobile menu */
+/* Contact info */
 .mobileInfo {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
   border-top: 1px solid #cfcfcf;
+  padding-top: 1rem;
+
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -100,25 +116,24 @@
   }
 }
 
-/* 📱 Mobile styles */
+/* 📱 Mobile */
 @media (max-width: 768px) {
   .nav {
     display: none;
   }
 
-  .desktopLang {
-    display: none;
-  }
-
-  .mobileLang {
-    display: block;
-  }
-
   .burger {
     display: block;
   }
+}
 
-  .actions {
-    gap: 0.6rem;
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
