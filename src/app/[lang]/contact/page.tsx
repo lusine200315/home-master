@@ -2,6 +2,7 @@ import { Phone, MapPin, Clock } from "lucide-react";
 import Container from "@/components/container/Container";
 import { getTranslations } from "@/lib/getTranslations";
 import Image from "next/image";
+import React from "react";
 
 type Props = {
   params: {
@@ -13,6 +14,12 @@ const iconMap = {
   phone: Phone,
   address: MapPin,
   hours: Clock,
+};
+
+type ContactItem = {
+  type: 'phone' | 'address' | 'hours';
+  label: string;
+  value: string | string[];
 };
 
 export default async function Contact({ params }: Props) {
@@ -41,8 +48,7 @@ export default async function Contact({ params }: Props) {
               alt="Contact us"
             />            
             <div className="flex flex-col gap-4">
-              {contact.items.map((item: any, i: number) => {
-                const Icon = iconMap[item.type as keyof typeof iconMap];
+              {contact.items.map((item: ContactItem, i: number) => {                const Icon = iconMap[item.type as keyof typeof iconMap];
                 return (
                   <div key={i} className="flex gap-3 items-start">
                     <Icon className="text-gray-700" />
