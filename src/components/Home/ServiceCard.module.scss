@@ -7,10 +7,6 @@
   transition: all 0.3s ease;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
 /* IMAGE */
 .imageWrapper {
   width: 320px;
@@ -39,7 +35,7 @@
     font-weight: 700;
     margin-bottom: 1rem;
 
-    color: #0f172a;
+    color: #414141;
     letter-spacing: -0.3px;
   }
 

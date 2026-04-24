@@ -2,6 +2,7 @@
 
 import styles from "./Services.module.scss";
 import ServiceCard from "./ServiceCard";
+import Container from "../container/Container";
 
 type ServiceItem = {
   title: string;
@@ -20,8 +21,8 @@ type Props = {
 
 export default function Services({ data }: Props) {
   return (
-    <section className={styles.services}>
-      <h2>{data.title}</h2>
+    <Container>
+      <h2 className={styles.title}>{data.title}</h2>
 
       <div className={styles.list}>
         {Object.entries(data.items).map(([key, item], index) => (
@@ -32,6 +33,6 @@ export default function Services({ data }: Props) {
           />
         ))}
       </div>
-    </section>
+    </Container>
   );
 }

@@ -11,15 +11,9 @@ type Props = {
 
 export default function Hero({ data }: Props) {
   return (
-    <main className={styles.container}>
-      <section className={styles.hero}>
-        <h1 className={styles.title}>
-          {data.slogan}
-        </h1>
-        <p className={styles.subtitle}>
-          {data.description}
-        </p>
-      </section>
-    </main>
+    <div className={styles.hero}>
+      <h1 className={styles.title}>{data.slogan}</h1>
+      <p className={styles.subtitle}>{data.description}</p>
+    </div>
   );
 }

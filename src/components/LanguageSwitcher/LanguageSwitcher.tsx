@@ -57,8 +57,10 @@ export default function LanguageSwitcher() {
           setOpen(prev => !prev);
         }}
       >
-        <span>{current?.flag}</span>
-        <span>{current?.code.toUpperCase()}</span>
+        <div className='flex gap-2'>
+          <span>{current?.flag}</span>
+          <span>{current?.code.toUpperCase()}</span>
+        </div>
         <FaChevronDown />
       </button>
 

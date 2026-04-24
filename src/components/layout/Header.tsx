@@ -3,9 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -34,10 +35,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* Logo */}
-        <div className={styles.logo}>
-          <h1>HomeMaster</h1>
-        </div>
+        <Link href='/' className="cursor-pointer">
+          <Image src='/logo.png' alt='Home Master' width={140} height={40} />
+        </Link>
 
         {/* Desktop Nav */}
         <nav className={styles.nav}>

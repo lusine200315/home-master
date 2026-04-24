@@ -3,6 +3,7 @@
     "slogan": "The comfort of your home is our job.",
     "description": "Household services and general renovation works"
   },
+
   "services": {
     "title": "Services",
     "items": {
@@ -13,7 +14,7 @@
           "Installation, repair, and replacement of sinks, faucets, pipes, valves, toilets, and showers.",
           "Pipe installation and dismantling, sewer blockage removal."
         ],
-        "image": "/services/plumbing.webp"
+        "image": "/services/plumbing.png"
       },
       "electricity": {
         "title": "Electrical Services",
@@ -21,7 +22,7 @@
           "We carry out all types of electrical work quickly and with high quality.",
           "Installation and replacement of chandeliers, sockets, switches, lamps, breakers, fans, and LED lights."
         ],
-        "image": "/services/plumbing.webp"
+        "image": "/services/electrical _services_new.png"
       },
       "doors_windows": {
         "title": "Doors and Windows",
@@ -29,7 +30,7 @@
           "Installation, repair, and adjustment of wooden, metal, and plastic doors and windows.",
           "Lock replacement, handle installation, glass replacement, mechanism repair, insulation improvement."
         ],
-        "image": "/services/doors_windows.jpg"
+        "image": "/services/doors_windows_new.png"
       },
       "furniture_cleaning": {
         "title": "Furniture Cleaning",
@@ -37,7 +38,7 @@
           "Deep cleaning of upholstered furniture on-site.",
           "Stain removal, odor elimination, hygienic disinfection using safe materials."
         ],
-        "image": "/services/furniture-cleaning.jpg"
+        "image": "/services/furniture_cleaning_new.png"
       },
       "furniture_repair": {
         "title": "Furniture Repair",
@@ -45,7 +46,7 @@
           "Repair and replacement of furniture mechanisms.",
           "Adjustment of doors, hinges, guides, and restoration of surfaces."
         ],
-        "image": "/services/furniture-repair.jpg"
+        "image": "/services/furniture_repair_new.png"
       },
       "carpet_cleaning": {
         "title": "Carpet Cleaning",
@@ -53,7 +54,7 @@
           "Professional carpet washing and cleaning.",
           "Removal of stains and odors, color refresh, fiber preservation."
         ],
-        "image": "/services/carpet_cleaning.jpg"
+        "image": "/services/carpet_cleaning_new.png"
       },
       "boiler_repair": {
         "title": "Boiler Repair",
@@ -61,7 +62,7 @@
           "Diagnostics and repair of gas and electric boilers.",
           "Troubleshooting, cleaning, adjustment, and maintenance."
         ],
-        "image": "/services/boiler_repair.jpg"
+        "image": "/services/boiler_repair_new.png"
       },
       "ac_cleaning": {
         "title": "Air Conditioner Cleaning",
@@ -69,7 +70,7 @@
           "Cleaning of internal and external AC units.",
           "Filter washing, disinfection, gas check, and efficiency optimization."
         ],
-        "image": "/services/ac_cleaning.jpg"
+        "image": "/services/ac_cleaning_new.png"
       }
     }
   },
@@ -93,6 +94,36 @@
       "Affordable prices"
     ],
     "contact": "Call us and trust your home to professionals."
+  },
+
+  "advantages": {
+    "title": "Why Choose Us",
+    "items": [
+      {
+        "title": "Experienced Professionals",
+        "description": "Skilled craftsmen with years of experience in various fields."
+      },
+      {
+        "title": "High-Quality Work",
+        "description": "We use reliable materials and ensure excellent results."
+      },
+      {
+        "title": "Fast and timely execution",
+        "description": "We complete all work within the agreed deadlines."
+      },
+      {
+        "title": "Affordable Prices",
+        "description": "Transparent pricing system."
+      },
+      {
+        "title": "Full-Service Solutions",
+        "description": "Renovation, electrical, plumbing, painting, and more."
+      },
+      {
+        "title": "Individual Approach",
+        "description": "Every project is handled according to the client’s needs."
+      }
+    ]
   },
 
   "contact": {

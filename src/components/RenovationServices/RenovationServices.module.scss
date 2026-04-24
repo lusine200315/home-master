@@ -1,0 +1,92 @@
+.renovationServices {
+    padding: 2rem 0 5rem;
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 18rem;
+      height: 18rem;
+      background: rgba(99, 102, 241, 0.12);
+      filter: blur(4rem);
+      border-radius: 50%;
+      z-index: 0;
+    }
+  
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #414141;
+      position: relative;
+  
+      &::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 0.25rem;
+        background: #6366f1;
+        margin: 0.75rem auto 0;
+        border-radius: 0.25rem;
+      }
+    }
+  
+    .list {
+      max-width: 56.25rem;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+  
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+  
+      li {
+        color: #414141;
+        background: #ffffff;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(99, 102, 241, 0.08);
+        transition: all 0.25s ease;
+        position: relative;
+  
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 1.25rem;
+          bottom: 1.25rem;
+          width: 0.25rem;
+          background: #6366f1;
+          border-radius: 0.25rem;
+        }
+  
+        &:hover {
+          transform: translateY(-0.25rem);
+          box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+        }
+      }
+    }
+  
+    @media (max-width: 48rem) {
+      padding: 2.5rem 0 4rem;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      .list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }

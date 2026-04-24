@@ -16,9 +16,7 @@ type Props = {
 
 export default function ServiceCard({ item, isReverse }: Props) {
   return (
-    <div
-      className={`${styles.card} ${isReverse ? styles.reverse : ""}`}
-    >
+    <div className={`${styles.card} ${isReverse ? "flex-row-reverse" : ""}`}>
       {item.image && (
         <div className={styles.imageWrapper}>
           <Image
