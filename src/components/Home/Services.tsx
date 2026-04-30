@@ -25,9 +25,9 @@ export default function Services({ data }: Props) {
       <h2 className={styles.title}>{data.title}</h2>
 
       <div className={styles.list}>
-        {Object.entries(data.items).map(([key, item], index) => (
+        {Object.values(data.items).map((item, index) => (
           <ServiceCard
-            key={key}
+            key={item.title || index}
             item={item}
             isReverse={index % 2 !== 0}
           />

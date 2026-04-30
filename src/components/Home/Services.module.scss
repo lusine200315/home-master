@@ -1,23 +1,27 @@
-
 .title {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #414141;
+  margin-bottom: 2.5rem;
 }
 
 .list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  max-width: 68.75rem;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
   }
+
   .list {
-    gap: 0;
+    gap: 1.5rem;
   }
 }

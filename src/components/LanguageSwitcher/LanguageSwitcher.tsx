@@ -39,7 +39,6 @@ export default function LanguageSwitcher() {
   const segments = pathname.split('/');
 
   const hasLang = LANGUAGES.some(l => l.code === segments[1]);
-
   const currentLang = hasLang ? segments[1] : 'en';
 
   const pathWithoutLang = hasLang
@@ -57,10 +56,11 @@ export default function LanguageSwitcher() {
           setOpen(prev => !prev);
         }}
       >
-        <div className='flex gap-2'>
+        <div className={styles.triggerContent}>
           <span>{current?.flag}</span>
           <span>{current?.code.toUpperCase()}</span>
         </div>
+
         <FaChevronDown />
       </button>
 

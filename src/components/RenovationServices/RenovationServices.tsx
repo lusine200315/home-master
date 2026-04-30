@@ -1,4 +1,3 @@
-import { Lang } from '@/lib/getTranslations';
 import styles from './RenovationServices.module.scss';
 import Container from '../container/Container';
 
@@ -8,23 +7,23 @@ type RenovationServicesType = {
 };
 
 type Props = {
-    data: RenovationServicesType;
+  data: RenovationServicesType;
 };
 
-export default async function RenovationServices({ data }: Props) {
+export default function RenovationServices({ data }: Props) {
   return (
-    <Container>
-        <section className={styles.renovationServices}>
-        <div className="container">
-            <h2>{data.title}</h2>
+    <section className={styles.renovationServices}>
+      <Container>
+        <div className={styles.inner}>
+          <h2 className={styles.title}>{data.title}</h2>
 
-            <ul className={styles.list}>
+          <ul className={styles.list}>
             {data.items.map((item: string, index: number) => (
-                <li key={index}>{item}</li>
+              <li key={index}>{item}</li>
             ))}
-            </ul>
+          </ul>
         </div>
-        </section>
-    </Container>
+      </Container>
+    </section>
   );
 }

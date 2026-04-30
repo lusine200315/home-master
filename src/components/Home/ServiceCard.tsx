@@ -16,21 +16,21 @@ type Props = {
 
 export default function ServiceCard({ item, isReverse }: Props) {
   return (
-    <div className={`${styles.card} ${isReverse ? "flex-row-reverse" : ""}`}>
+    <div className={`${styles.card} ${isReverse ? styles.reverse : ""}`}>
       {item.image && (
         <div className={styles.imageWrapper}>
           <Image
-            width={350}
-            height={350}
             src={item.image}
             alt={item.title}
+            fill
+            className={styles.image}
           />
         </div>
       )}
-
+  
       <div className={styles.content}>
-        <h3>{item.title}</h3>
-
+        <h3 className={styles.title}>{item.title}</h3>
+    
         <ul>
           {item.description.map((desc, i) => (
             <li key={i}>{desc}</li>

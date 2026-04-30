@@ -3,6 +3,7 @@ import Container from "@/components/container/Container";
 import { getTranslations, Lang } from "@/lib/getTranslations";
 import Image from "next/image";
 import React from "react";
+import styles from './Contact.module.scss';
 
 type Props = {
   params: {
@@ -28,42 +29,46 @@ export default async function Contact({ params }: Props) {
 
   return (
     <Container>
-      <div className="flex items-center justify-center">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-6">
-            <h1 className="text-4xl text-center font-bold text-[#4f4f4f] uppercase">
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          
+          <div className={styles.header}>
+            <h1 className={styles.title}>
               {contact.title}
             </h1>
-            <p className="text-lg text-center text-gray-700">
+            <p className={styles.description}>
               {contact.description}
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className={styles.content}>
             <Image 
-              src="/contact_us.png"
+              src="/contact_us_new.png"
               width={400}
               height={400}
               alt="Contact us"
-            />            
-            <div className="flex flex-col gap-4">
-              {contact.items.map((item: ContactItem, i: number) => {                
-                const Icon = iconMap[item.type as keyof typeof iconMap];
-                return (
-                  <div key={i} className="flex gap-3 items-start">
-                    <Icon className="text-gray-700" />
+              className={styles.image}
+            />
 
-                    <div>
-                      <p className="font-semibold !pb-1">{item.label}</p>
+            <div className={styles.items}>
+              {contact.items.map((item: ContactItem, i: number) => {                
+                const Icon = iconMap[item.type];
+
+                return (
+                  <div key={i} className={styles.item}>
+                    <Icon className={styles.icon} />
+
+                    <div className={styles.textBlock}>
+                      <p className={styles.label}>{item.label}</p>
 
                       {Array.isArray(item.value) ? (
                         item.value.map((v: string, idx: number) => (
-                          <p key={idx} className="text-gray-600">
+                          <p key={idx} className={styles.value}>
                             {v}
                           </p>
                         ))
                       ) : (
-                        <p className="text-gray-600">{item.value}</p>
+                        <p className={styles.value}>{item.value}</p>
                       )}
                     </div>
                   </div>
@@ -71,6 +76,7 @@ export default async function Contact({ params }: Props) {
               })}
             </div>
           </div>
+
         </div>
       </div>
     </Container>
