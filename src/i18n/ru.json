@@ -13,7 +13,7 @@
           "Установка и ремонт раковин, кранов, труб, клапанов, унитазов и душевых.",
           "Монтаж труб и устранение засоров канализации."
         ],
-        "image": "/services/plumbing.png"
+        "image": "/services/plumbing_new.png"
       },
       "electricity": {
         "title": "Электрика",
@@ -21,7 +21,7 @@
           "Выполняем все виды электромонтажных работ быстро и качественно.",
           "Установка и замена люстр, розеток, выключателей, ламп и автоматов."
         ],
-        "image": "/services/electrical _services_new.png"
+        "image": "/services/electrical_services.jpg"
       },
       "doors_windows": {
         "title": "Двери и окна",
@@ -37,7 +37,7 @@
           "Глубокая чистка мягкой мебели на месте.",
           "Удаление пятен, запахов и дезинфекция безопасными средствами."
         ],
-        "image": "/services/furniture_cleaning_new.png"
+        "image": "/services/furniture_cleaning_new.jpg"
       },
       "furniture_repair": {
         "title": "Ремонт мебели",
@@ -53,7 +53,7 @@
           "Профессиональная чистка ковров.",
           "Удаление пятен, запахов и восстановление цвета."
         ],
-        "image": "/services/carpet_cleaning_new.png"
+        "image": "/services/carpet_cleaning_new.jpg"
       },
       "boiler_repair": {
         "title": "Ремонт котлов",

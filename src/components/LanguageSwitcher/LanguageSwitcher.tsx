@@ -13,8 +13,8 @@ type Lang = {
 };
 
 const LANGUAGES: Lang[] = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
   { code: 'hy', label: 'Հայերեն', flag: '🇦🇲' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
   { code: 'ru', label: 'Русский', flag: '🇷🇺' },
 ];
 
@@ -35,7 +35,6 @@ export default function LanguageSwitcher() {
     return () => document.removeEventListener('click', handleOutside);
   }, []);
 
-  // --- language logic ---
   const segments = pathname.split('/');
 
   const hasLang = LANGUAGES.some(l => l.code === segments[1]);

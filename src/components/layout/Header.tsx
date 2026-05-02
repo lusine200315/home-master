@@ -42,7 +42,6 @@ const Header = () => {
           />
         </Link>
 
-        {/* Desktop Nav */}
         <nav className={styles.nav}>
           <ul>
             {navLinks.map((link) => (
@@ -55,7 +54,6 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Actions */}
         <div className={styles.actions}>
           <LanguageSwitcher />
 
@@ -69,7 +67,6 @@ const Header = () => {
 
       </div>
 
-      {/* Mobile Menu */}
       {open && (
         <div className={styles.overlay}>
           <div className={styles.mobileMenu}>

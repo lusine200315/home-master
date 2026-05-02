@@ -43,7 +43,7 @@ export default async function Contact({ params }: Props) {
 
           <div className={styles.content}>
             <Image 
-              src="/contact_us_new.png"
+              src="/contact_us_new.jpg"
               width={400}
               height={400}
               alt="Contact us"

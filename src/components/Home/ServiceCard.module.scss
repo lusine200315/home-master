@@ -29,18 +29,12 @@
   &:hover {
     transform: translateY(-0.2rem);
   }
-
-  &:hover .image {
-    transform: scale(1.05);
-  }
 }
 
-/* REVERSE */
 .reverse {
   flex-direction: row-reverse;
 }
 
-/* IMAGE */
 .imageWrapper {
   position: relative;
   width: 20rem;
@@ -53,9 +47,12 @@
 .image {
   object-fit: cover;
   transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-/* CONTENT */
 .content {
   flex: 1;
   max-width: 32.5rem;
@@ -86,38 +83,11 @@
 
     li {
       font-size: 1rem;
-      color: #475569;
+      color: #414141;
       line-height: 1.6;
     }
   }
 }
-
-// .button {
-//   margin-top: 1.2rem;
-//   padding: 0;
-//   background: none;
-//   border: none;
-//   color: #4f46e5;
-//   font-size: 0.95rem;
-//   font-weight: 500;
-//   cursor: pointer;
-//   position: relative;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: -0.125rem;
-//     width: 0%;
-//     height: 0.125rem;
-//     background: #4f46e5;
-//     transition: width 0.3s ease;
-//   }
-
-//   &:hover::after {
-//     width: 100%;
-//   }
-// }
 
 @media (max-width: 768px) {
   .card {

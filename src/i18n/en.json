@@ -14,7 +14,7 @@
           "Installation, repair, and replacement of sinks, faucets, pipes, valves, toilets, and showers.",
           "Pipe installation and dismantling, sewer blockage removal."
         ],
-        "image": "/services/plumbing.png"
+        "image": "/services/plumbing_new.png"
       },
       "electricity": {
         "title": "Electrical Services",
@@ -22,7 +22,7 @@
           "We carry out all types of electrical work quickly and with high quality.",
           "Installation and replacement of chandeliers, sockets, switches, lamps, breakers, fans, and LED lights."
         ],
-        "image": "/services/electrical _services_new.png"
+        "image": "/services/electrical_services.jpg"
       },
       "doors_windows": {
         "title": "Doors and Windows",
@@ -38,7 +38,7 @@
           "Deep cleaning of upholstered furniture on-site.",
           "Stain removal, odor elimination, hygienic disinfection using safe materials."
         ],
-        "image": "/services/furniture_cleaning_new.png"
+        "image": "/services/furniture_cleaning_new.jpg"
       },
       "furniture_repair": {
         "title": "Furniture Repair",
@@ -54,7 +54,7 @@
           "Professional carpet washing and cleaning.",
           "Removal of stains and odors, color refresh, fiber preservation."
         ],
-        "image": "/services/carpet_cleaning_new.png"
+        "image": "/services/carpet_cleaning_new.jpg"
       },
       "boiler_repair": {
         "title": "Boiler Repair",

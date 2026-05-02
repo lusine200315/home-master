@@ -21,7 +21,7 @@
   display: inline-block;
   font-size: 2.2rem;
   font-weight: 700;
-  color: #4f4f4f;
+  color: #414141;
   text-transform: uppercase;
 
   &::after {
@@ -37,7 +37,7 @@
 
 .description {
   font-size: 1.125rem;
-  color: #4b5563;
+  color: #414141;
   line-height: 1.6;
 }
 
@@ -57,7 +57,7 @@
 .items {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .item {
@@ -67,7 +67,7 @@
 }
 
 .icon {
-  color: #374151;
+  color: #414141;
   flex-shrink: 0;
 }
 
@@ -82,12 +82,13 @@
 }
 
 .value {
-  color: #6b7280;
+  color: #414141;
 }
 
 @media screen and (min-width: 768px) {
   .content {
     flex-direction: row;
+    gap: 5rem;
   }
 }
 
