@@ -151,5 +151,17 @@
         ]
       }
     ]
+  },
+
+  "footer": {
+    "addressLabel": "Հասցե",
+    "address": "Երևան, Հայաստան, ...",
+    "phoneLabel": "Հեռախոս",
+    "phone": "+374 00 000000",
+    "workingDaysLabel": "Աշխատանքային օրեր",
+    "workingDays": "Երկ - Շբթ",
+    "hoursLabel": "Ժամեր",
+    "hours": "09:00 - 18:00",
+    "copyright": "HomeMaster"
   }
 }

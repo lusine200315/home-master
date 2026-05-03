@@ -11,7 +11,7 @@ type Props = {
 
 export default async function About({ params }: Props) {
   const data = await getTranslations(params.lang);
-  const advantages = data.advantages;
+  const { advantages } = data;
 
   return (
     <Container>

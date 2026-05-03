@@ -1,25 +1,30 @@
 import { ReactNode } from 'react';
-import "../styles/globals.scss";
+import "../../styles/globals.scss";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { Lang } from '@/lib/getTranslations';
 
 export const metadata = {
   title: 'HomeMaster',
   description: 'Your home comfort is our job',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+type Props = {
+  children: ReactNode;
+  params: {
+    lang: Lang;
+  };
+};
+
+export default function RootLayout({ children, params }: Props) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body className="antialiased">
-        {/* Header appears on all pages */}
         <Header />
 
-        {/* Page content */}
         <main>{children}</main>
 
-        {/* Footer appears on all pages */}
-        <Footer />
+        <Footer lang={params.lang} />
       </body>
     </html>
   );

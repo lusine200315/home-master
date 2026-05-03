@@ -150,5 +150,17 @@
         ]
       }
     ]
+  },
+
+  "footer": {
+    "addressLabel": "Адрес",
+    "address": "Ереван, Армения, ул. Главная 123",
+    "phoneLabel": "Телефон",
+    "phone": "+374 00 000000",
+    "workingDaysLabel": "Рабочие дни",
+    "workingDays": "Пн - Сб",
+    "hoursLabel": "Часы работы",
+    "hours": "09:00 - 18:00",
+    "copyright": "HomeMaster"
   }
 }

@@ -1,19 +1,27 @@
 import styles from './Footer.module.scss';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import Link from 'next/link';
+import { getTranslations, Lang } from '@/lib/getTranslations';
 
-const Footer = () => {
+type Props = {
+  lang: Lang;
+};
+
+const Footer = async ({ lang }: Props) => {
+  const data = await getTranslations(lang);
+  const { footer } = data;
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         
         <div className={styles.contactInfo}>
-          <p><strong>Address:</strong> 123 Main Street, Yerevan, Armenia</p>
-          <p><strong>Phone:</strong> +374 00 000000</p>
+          <p><strong>{footer.addressLabel}:</strong> {footer.address}</p>
+          <p><strong>{footer.phoneLabel}:</strong> {footer.phone}</p>
 
           <div className={styles.workingHours}>
-            <p><strong>Working Days:</strong> Mon - Sat</p>
-            <p><strong>Hours:</strong> 09:00 - 18:00</p>
+            <p><strong>{footer.workingDaysLabel}:</strong> {footer.workingDays}</p>
+            <p><strong>{footer.hoursLabel}:</strong> {footer.hours}</p>
           </div>
         </div>
 
@@ -30,7 +38,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        © {new Date().getFullYear()} HomeMaster.
+        © {new Date().getFullYear()} {footer.copyright}.
       </div>
     </footer>
   );

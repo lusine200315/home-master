@@ -151,5 +151,17 @@
         ]
       }
     ]
+  },
+
+  "footer": {
+    "addressLabel": "Address",
+    "address": "123 Main Street, Yerevan, Armenia",
+    "phoneLabel": "Phone",
+    "phone": "+374 00 000000",
+    "workingDaysLabel": "Working Days",
+    "workingDays": "Mon - Sat",
+    "hoursLabel": "Hours",
+    "hours": "09:00 - 18:00",
+    "copyright": "HomeMaster"
   }
 }
